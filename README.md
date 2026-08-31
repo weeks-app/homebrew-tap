@@ -3,5 +3,7 @@
 Install Weeks command-line tools with Homebrew.
 
 ```sh
-brew install --cask weeks-app/tap/weeks
+brew tap weeks-app/tap
+brew trust weeks-app/tap
+brew install --cask weeks
 ```
