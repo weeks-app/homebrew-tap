@@ -5,21 +5,21 @@
 class Weeks < Formula
   desc "Command-line and agent interface to Weeks"
   homepage "https://weeks.app"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/weeks-app/weeks-cli/releases/download/v0.1.1/weeks_0.1.1_darwin_x86_64.tar.gz"
-      sha256 "38bbfa8ba6038b063de720f335ff19c10cd64d76496ea9dc47cfb1213aee8e7b"
+      url "https://github.com/weeks-app/weeks-cli/releases/download/v0.1.2/weeks_0.1.2_darwin_x86_64.tar.gz"
+      sha256 "8dc6577e20552e5c9d18e9becde2905dad06f136d2d6465c8edb7b338f473bf0"
 
       define_method(:install) do
         bin.install "weeks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/weeks-app/weeks-cli/releases/download/v0.1.1/weeks_0.1.1_darwin_arm64.tar.gz"
-      sha256 "3f14ca56c58b6f80c7eb47baf5acbe1c469b6563da4600b1eeb977b9495d7bd8"
+      url "https://github.com/weeks-app/weeks-cli/releases/download/v0.1.2/weeks_0.1.2_darwin_arm64.tar.gz"
+      sha256 "37c66f8b8c73b9d2e04b02bcfddf194da4c3111ddf3c82f02ba322c2e42f80ec"
 
       define_method(:install) do
         bin.install "weeks"
@@ -29,15 +29,15 @@ class Weeks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/weeks-app/weeks-cli/releases/download/v0.1.1/weeks_0.1.1_linux_x86_64.tar.gz"
-      sha256 "779642c13fcf25c16bce3d14dbbb420e42edcc3bd5efb491faee587d447dda19"
+      url "https://github.com/weeks-app/weeks-cli/releases/download/v0.1.2/weeks_0.1.2_linux_x86_64.tar.gz"
+      sha256 "c6dbb7e1c4ef1b6782eff516b1c3691e228ca88f84c37f49e8fe52ab67bd3781"
       define_method(:install) do
         bin.install "weeks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/weeks-app/weeks-cli/releases/download/v0.1.1/weeks_0.1.1_linux_arm64.tar.gz"
-      sha256 "2e3bdbf456e8854d9b0fc40874523171db53ed8e7216e2f1888c05b96d1fd949"
+      url "https://github.com/weeks-app/weeks-cli/releases/download/v0.1.2/weeks_0.1.2_linux_arm64.tar.gz"
+      sha256 "9f4104ac5c70245772a9bc62a50d196121df7559dd3ebaea556f748c128bb119"
       define_method(:install) do
         bin.install "weeks"
       end
